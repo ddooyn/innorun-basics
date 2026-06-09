@@ -13,7 +13,7 @@ const buildServerUrl = (host, portValue, useHttps) => {
   }
 
   const scheme = useHttps ? "https" : "http";
-  return `${scheme}://${host}:${portValue}`;
+  return `${scheme}://${host}:${portValueNum}`;
 };
 
 console.log(buildServerUrl("localhost", "3000", false));
